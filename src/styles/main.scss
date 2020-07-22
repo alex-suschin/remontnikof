@@ -203,4 +203,68 @@ form span {
     }
 }
 
+input {
+    background-color: #eef5fb;
+    border-radius: 15px;
+    box-shadow: none;
+    height: 58px;
+    padding: 0 20px 0 20px;
+    color: #9ab3c5;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    line-height: 20px;
+}
+
+textarea {
+    padding: 20px 20px 0 20px;
+    background-color: #eef5fb;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.agree {
+    color: #c6dae9;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+::-webkit-input-placeholder {
+    color: #9ab3c5;
+}
+
+::-moz-placeholder {
+    color: #9ab3c5;
+}
+
+:-moz-placeholder {
+    color: #9ab3c5;
+}
+
+:-ms-input-placeholder {
+    color: #9ab3c5;
+}
+
+button[type=submit] {
+    padding: 20px 0 18px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.btn-red {
+    padding: 20px 0 18px 0;
+    background-color: #ec4e4f;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.btn-red:hover {
+    background-color: #ec4e4f;
+}
+
 @import "base/media";
