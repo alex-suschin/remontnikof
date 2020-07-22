@@ -1,0 +1,95 @@
+.header {
+    padding: 0 0 0 0;
+}
+
+.logo {
+    margin: 0 0 0 10px;
+    img {
+        width: 230px;
+        height: 52px;
+    }
+}
+
+.header-top-line {
+    padding: 18px 0 20px 0;
+    background-color: #eaf3fb;
+    .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.address {
+    position: relative;
+    padding: 0 0 0 35px;
+    margin: 0 0 0 43px;
+    color: #9baec1;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+
+.address::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -9px;
+    display: block;
+    width: 26px;
+    height: 34px;
+    background: url(../img/svg/gps.svg) no-repeat center;
+    background-size: cover;
+}
+
+.phone {
+    position: relative;
+    padding: 0 0 0 42px;
+    color: #4c536d;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 20px;
+}
+
+.phone:hover {
+    color: #4c536d;
+}
+
+.phone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -6px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../img/svg/tel.svg) no-repeat center;
+    background-size: cover;
+}
+
+.header-bottom-line {
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+}
+
+.top-menu {
+    padding: 23px 0 24px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    li {}
+    a {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    a:hover {
+        color: #5a9ad8;
+    }
+}
+
+.logo--fixed,
+.phone--fixed {
+    display: none;
+}
