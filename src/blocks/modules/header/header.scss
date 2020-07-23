@@ -13,7 +13,8 @@
 .header-top-line {
     padding: 18px 0 20px 0;
     background-color: #eaf3fb;
-    .row {
+    .container {
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
