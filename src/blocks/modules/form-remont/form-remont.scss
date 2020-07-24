@@ -1,0 +1,145 @@
+.form-remont-wrpa {
+    padding: 0 0 0 0;
+}
+
+.form-remont {
+    padding: 37px 39px 50px 39px;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    .title {
+        color: black;
+        font-size: 55px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 66px;
+        margin-bottom: 36px;
+    }
+    .btn-red {
+        max-width: 513px;
+        width: 100%;
+    }
+    .agree {
+        color: #c6dae9;
+        font-size: 13px;
+        text-align: left;
+        font-weight: 500;
+        width: 48.58%;
+    }
+}
+
+.form-remont-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    span {
+        width: 48.58%;
+    }
+    input {
+        display: block;
+        width: 100%;
+    }
+}
+
+.nice-select {
+    width: 100%;
+    height: 58px;
+    background-color: #eef5fb;
+    border-radius: 15px;
+    border: none;
+    color: #9ab3c5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    span {
+        width: 100%;
+        height: 100%;
+        line-height: 370%;
+    }
+}
+
+.nice-select .list {
+    width: 100%;
+}
+
+.nice-select:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 9px;
+    right: 20px;
+    background: url(../img/svg/arr-select.svg) no-repeat center;
+    background-size: cover;
+    border: none;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+}
+
+.nice-select.open:after {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    right: 24px;
+    top: 47%;
+}
+
+.form-remont-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-span {
+    position: relative;
+}
+
+.date-span::after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 21px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/svg/calendar.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.form-remont-wrap {
+    margin-bottom: 178px;
+}
+
+.dg {}
+
+.datepicker {
+    background-color: #eef5fb;
+    border-radius: 15px;
+    box-sizing: content-box;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+    width: 513px;
+    position: absolute;
+    left: -100000px;
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
+    transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
+    z-index: 100;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}

@@ -5,21 +5,21 @@
             <div class="row">
                 <div class="col-lg-9">
                     <div class="vars-items">
-                        <a href="javascript: void(0);" class="vars-item active">
+                        <a href="javascript: void(0);" data-switch="elem1" class="vars-item active">
                             <div class="vars-item--img"><img src="img/wash-mashine.png" alt=""></div>
                             <div class="vars-item--name">Стиральная машина</div>
                         </a>
-                        <a href="javascript: void(0);" class="vars-item">
+                        <a href="javascript: void(0);" data-switch="elem2" class="vars-item">
                             <div class="vars-item--img"><img src="img/wash-dishes.png" alt=""></div>
                             <div class="vars-item--name">Посудомоечная машина</div>
                         </a>
-                        <a href="javascript: void(0);" class="vars-item">
+                        <a href="javascript: void(0);" data-switch="elem3" class="vars-item">
                             <div class="vars-item--img"><img src="img/fridge.png" alt=""></div>
                             <div class="vars-item--name">Холодильник</div>
                         </a>
                     </div>
                     <div class="price-table">
-                        <div class="price-table__elem">
+                        <div class="price-table__elem" id="elem1">
                             <div class="price-table-box">
                                 <div class="price-table-box__line">
                                     <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check1"><label for="check1">Не греет воду</label></div>
@@ -56,6 +56,48 @@
                                 <div class="price-table-box__line">
                                     <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check9"><label for="check9">Не открывается люк</label></div>
                                     <div class="price-bug">от 400 Рублей</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-table__elem" id="elem2" style="display: none;">
+                            <div class="price-table-box">
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check10"><label for="check10">Не моет посуду</label></div>
+                                    <div class="price-bug">от 650 Рублей</div>
+                                </div>
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check11"><label for="check11">Не моет посуду</label></div>
+                                    <div class="price-bug">от 650 Рублей</div>
+                                </div>
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check12"><label for="check12">Не моет посуду</label></div>
+                                    <div class="price-bug">от 650 Рублей</div>
+                                </div>
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check13"><label for="check13">Не моет посуду</label></div>
+                                    <div class="price-bug">от 650 Рублей</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-table__elem" id="elem3" style="display: none;">
+                            <div class="price-table-box">
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check14"><label for="check14">Не морозит</label></div>
+                                    <div class="price-bug">от 850 Рублей</div>
+                                </div>
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check15"><label for="check15">Не морозит</label></div>
+                                    <div class="price-bug">от 850 Рублей</div>
+                                </div>
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check16"><label for="check16">Не морозит</label></div>
+                                    <div class="price-bug">от 850 Рублей</div>
+                                </div>
+                                <div class="price-table-box__line">
+                                    <div class="name-bug"><input class="checkbox" type="checkbox" name="check1" id="check17"><label for="check17">Не морозит</label></div>
+                                    <div class="price-bug">от 850 Рублей</div>
                                 </div>
                             </div>
                         </div>
