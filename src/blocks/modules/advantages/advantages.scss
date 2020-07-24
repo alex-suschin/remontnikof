@@ -1,25 +1,35 @@
 .advantages {
-    padding: 169px 0 0 0;
+    position: relative;
+    padding: 170px 0 0 0;
     background: url(../img/advantages-bg.png) no-repeat center;
     background-size: cover;
     min-height: 940px;
 }
 
 .advantages-box {
+    position: relative;
     max-width: 1264px;
     width: 100%;
     margin: 0 auto;
     .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
         color: black;
         font-size: 45px;
         font-weight: 900;
         line-height: 66px;
         text-align: center;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
     }
 }
 
 .advantages-item--title {
-    margin-bottom: 3px;
+    margin-bottom: 7px;
     color: black;
     font-size: 25px;
     font-weight: 700;
@@ -29,14 +39,75 @@
     color: black;
     font-size: 18px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 22px;
 }
 
 .advantages-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 422px;
     width: 100%;
-    padding: 0 0 0 0;
+    min-height: 155px;
+    padding: 10px 36px 10px 143px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+    img {
+        position: absolute;
+        top: 50%;
+        left: 39px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+}
+
+.advantages-item-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.advantages-item-line--top {
+    width: 74.5%;
+}
+
+.advantages-item-line--middle {
+    width: 100%;
+}
+
+.advantages-item-line--bottom {
+    width: 74.5%;
+}
+
+.advantages-item--2,
+.advantages-item--6 {
+    padding: 10px 36px 10px 37px;
+}
+
+.advantages-item--2 img,
+.advantages-item--6 img {
+    left: initial;
+    right: 36px;
+}
+
+.advantages-decor1 {
+    position: absolute;
+    position: absolute;
+    top: -410px;
+    left: -7px;
+    z-index: -1;
+}
+
+.advantages-decor2 {
+    position: absolute;
+    position: absolute;
+    bottom: 66px;
+    right: 156px;
+    z-index: 0;
 }
