@@ -1,5 +1,6 @@
 .price {
     padding: 46px 0 0 0;
+    margin-bottom: 103px;
     .title {
         color: black;
         font-size: 55px;
@@ -7,6 +8,9 @@
         line-height: 66px;
         text-align: center;
         margin-bottom: 18px;
+    }
+    .row {
+        align-items: stretch;
     }
 }
 
@@ -89,8 +93,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 51px 0 29px;
+    padding: 14px 51px 12px 29px;
     border-bottom: 2px solid #eaf3fa;
+}
+
+.price-table-box__line:last-child {
+    border: none;
 }
 
 .name-bug {
@@ -98,7 +106,7 @@
         position: relative;
         padding: 0px 0 0 35px;
         font-size: 18px;
-        line-height: 50px;
+        line-height: 1.25;
         color: #8699ac;
         font-weight: 400;
         margin-bottom: 0;
@@ -115,7 +123,7 @@
         display: block;
         position: absolute;
         left: 0;
-        top: 14px;
+        top: 0;
         width: 20px;
         height: 21px;
         background-color: white;
@@ -133,11 +141,79 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+    .checkbox:checked+label {
+        font-weight: 500;
+        color: black;
+    }
 }
 
 .price-bug {
     color: #5a9bd9;
     font-size: 18px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 1.25;
+}
+
+.price-order {
+    padding: 40px 0 0 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+    height: 100%;
+}
+
+.price-order__ex-item {
+    margin-bottom: 29px;
+    img {
+        margin: 0 auto;
+        margin-bottom: 13px;
+    }
+    span {
+        display: block;
+        color: #b5cce5;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.25;
+    }
+}
+
+.price-order__ex-item:last-child {
+    margin-bottom: 33px;
+}
+
+.total-price__val {
+    text-align: center;
+    padding: 48px 0 0 0;
+    border-top: 1px solid #f1f8fd;
+    span {
+        display: block;
+        margin-bottom: -5px;
+        color: black;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 48px;
+    }
+    b {
+        display: block;
+        margin-bottom: 29px;
+        color: black;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 1;
+        i {
+            font-style: normal;
+            text-decoration: line-through;
+        }
+    }
+    .btn-red {
+        display: block;
+        max-width: 221px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.form-order-price {
+    width: 100%;
 }

@@ -1,0 +1,42 @@
+.advantages {
+    padding: 169px 0 0 0;
+    background: url(../img/advantages-bg.png) no-repeat center;
+    background-size: cover;
+    min-height: 940px;
+}
+
+.advantages-box {
+    max-width: 1264px;
+    width: 100%;
+    margin: 0 auto;
+    .title {
+        color: black;
+        font-size: 45px;
+        font-weight: 900;
+        line-height: 66px;
+        text-align: center;
+    }
+}
+
+.advantages-item--title {
+    margin-bottom: 3px;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.advantages-item--desc {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.advantages-item {
+    max-width: 422px;
+    width: 100%;
+    padding: 0 0 0 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+}
