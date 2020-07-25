@@ -10,6 +10,33 @@ import "./import/datepicker.min";
 
 
 $(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 90) {
+            $('.header-bottom-line').addClass('fixed');
+            $('.logo--fixed').css('display', 'block');
+            $('.phone--fixed').css('display', 'block');
+            $('body').css('padding-top', '91px');
+        } else if ($(this).scrollTop() < 90) {
+            $('.header-bottom-line').removeClass('fixed');
+            $('body').css('padding-top', '0');
+            $('.logo--fixed').css('display', 'none');
+            $('.phone--fixed').css('display', 'none');
+        }
+    });
+
+    $('.top-menu a').click(function() {
+        var scroll_elem = $(this).attr('href');
+        if ($(scroll_elem).length != 0) {
+            $('html, body').animate({
+                scrollTop: $(scroll_elem).offset().top - 150
+            }, 800);
+        } else {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+        }
+        return false;
+    });
 
     $('select').niceSelect();
 
