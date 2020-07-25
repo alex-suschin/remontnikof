@@ -1,0 +1,30 @@
+.footer {
+    padding: 31px 0 29px 0;
+    .logo {
+        margin: 0;
+    }
+    span {
+        display: block;
+        margin: 11px 0 0 0;
+        color: #bed4e9;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+
+.policy {
+    display: block;
+    margin: 11px 0 0 117px;
+    color: #bed4e9;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
