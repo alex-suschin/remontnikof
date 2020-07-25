@@ -137,6 +137,16 @@
     cursor: pointer;
     background: url(../img/svg/arr-slider.svg) no-repeat center;
     background-size: contain;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.rewiews-next:hover {
+    background: url(../img/svg/arr-slider-blue.svg) no-repeat center;
+    background-size: contain;
 }
 
 .rewiews-prev {
@@ -153,6 +163,16 @@
     -o-transform: translateX(-50%) rotate(-90deg);
     cursor: pointer;
     background: url(../img/svg/arr-slider.svg) no-repeat center;
+    background-size: contain;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.rewiews-prev:hover {
+    background: url(../img/svg/arr-slider-blue.svg) no-repeat center;
     background-size: contain;
 }
 

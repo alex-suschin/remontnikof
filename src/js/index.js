@@ -73,7 +73,7 @@ $(function() {
     });
 
     $('.date-input').datepicker({
-
+        minDate: new Date()
     });
 
     $('.more-brands').click(function() {

@@ -125,15 +125,19 @@
 .datepicker {
     background-color: #eef5fb;
     border-radius: 15px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
     color: black;
     width: 513px;
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     left: -100000px;
     opacity: 0;
+    border: none;
+    padding: 20px 0px 20px 0px;
+    box-shadow: none;
     transition: opacity 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s;
     transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
@@ -142,4 +146,99 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.datepicker--pointer {
+    display: none;
+}
+
+.datepicker--nav {
+    border: none;
+    justify-content: flex-start;
+    padding: 0 0 0 22px;
+}
+
+.datepicker--nav-title {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.datepicker--nav-title i {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.datepicker--nav-title:hover {
+    background-color: #8ab8e9;
+}
+
+.datepicker--nav-action:hover {
+    background-color: #8ab8e9;
+}
+
+.datepicker--cell {
+    color: black;
+    border-radius: 12px;
+    height: 43px;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.datepicker--cell.-disabled- {
+    cursor: default;
+    color: #c4d7e5;
+}
+
+.datepicker--cell.-current- {
+    color: #fff;
+    background-color: #8ab8e9;
+}
+
+.datepicker--cell.-selected- {
+    color: #fff;
+    background-color: #8ab8e9;
+}
+
+.datepicker--cell.-current-:hover {
+    color: #fff;
+    background-color: #8ab8e9;
+}
+
+.datepicker--cell.-selected-:hover {
+    color: #fff;
+    background-color: #8ab8e9;
+}
+
+.datepicker--day-name {
+    text-transform: lowercase;
+    color: #9ab3c5;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.datepicker--days-names {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d9e7f3;
+}
+
+.datepicker--nav-action {
+    position: absolute;
+}
+
+.datepicker--content {
+    box-sizing: border-box;
+    padding: 0 0 0 0;
+}
+
+.datepicker--cell:hover {
+    color: #8ab8e9;
+    background: transparent;
 }
