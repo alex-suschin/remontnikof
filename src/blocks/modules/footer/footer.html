@@ -7,3 +7,37 @@
         </div>
     </div>
 </footer>
+
+<div id="popup-callback" class="modal fade">
+    <div class="modal-dialog popup__dialog" role="document">
+        <div class="modal-content popup__content">
+            <div class="popup__close close" data-dismiss="modal">×</div>
+            <div class="popup__title">
+                Заполните форму и мы свяжемся с вами
+            </div>
+            <form action="/" method="POST" class="form-popup">
+                <span><input type="hidden" class="hidden-input" value="Форма в попапе"></span>
+                <div class="form-popup__item">
+                    <span><input type="text" placeholder="Имя"></span>
+                    <span><input type="tel" required="required" placeholder="Телефон"></span>
+                </div>
+                <div class="form-popup__item">
+                    <button type="submit" class="btn-red">Вызвать мастера</button>
+                    <div class="agree">Нажимая на кнопку "Вызвать мастера", вы даете согласие на обработку персональных данных</div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="popup-thanks" class="modal fade">
+    <div class="modal-dialog popup__dialog" role="document">
+        <div class="modal-content popup__content">
+            <div class="popup__close close" data-dismiss="modal">×</div>
+            <div class="popup__title">
+                Спасибо! Завка принята.<br> В ближайшее время мы свяжемся с вами
+            </div>
+        </div>
+    </div>
+</div>

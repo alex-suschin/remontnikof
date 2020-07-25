@@ -147,6 +147,11 @@
     }
 }
 
+.name-bug label:hover::before {
+    background-color: #c7dff9;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.19);
+}
+
 .price-bug {
     color: #5a9bd9;
     font-size: 18px;

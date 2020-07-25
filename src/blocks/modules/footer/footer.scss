@@ -18,9 +18,14 @@
     margin: 11px 0 0 117px;
     color: #bed4e9;
     font-size: 15px;
-    text-decoration: underline;
     font-weight: 500;
     line-height: 20px;
+    border-bottom: 2px solid #bed4e9;
+}
+
+.policy:hover {
+    color: #9bbfe3;
+    border-bottom: 2px solid #9bbfe3
 }
 
 .footer-box {
