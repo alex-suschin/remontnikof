@@ -1,0 +1,51 @@
+.brands {
+    position: relative;
+    padding: 0 0 84px 0;
+    .title {
+        margin-bottom: 48px;
+        color: black;
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 66px;
+    }
+    .man {
+        position: absolute;
+        top: 128px;
+        right: -10px;
+        z-index: 5;
+    }
+}
+
+.brands-items {
+    margin-bottom: 31px;
+    padding: 66px 49px 14px 49px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 98px;
+        margin-bottom: 55px;
+    }
+    img:nth-child(3n) {
+        margin-right: 0;
+    }
+    img.brand-hide {
+        display: none;
+    }
+    img.brand-hide.active {
+        display: inline-block;
+    }
+}
+
+.more-brands {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+}

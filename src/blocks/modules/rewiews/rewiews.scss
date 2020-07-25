@@ -1,0 +1,190 @@
+.rewiews {
+    position: relative;
+    padding: 164px 0 0 0;
+    background: url(../img/rewiews-bg.png) no-repeat center;
+    background-size: cover;
+    min-height: 1076px;
+    z-index: 10;
+    .title {
+        margin-bottom: 88px;
+        color: black;
+        font-size: 55px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 66px;
+    }
+}
+
+.rewiews-form {
+    padding: 33px 40px 35px 39px;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    .title {
+        margin-bottom: 32px;
+        color: black;
+        font-size: 30px;
+        text-align: left;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+    span {
+        display: block;
+        width: 100%;
+        margin-bottom: 19px;
+    }
+    input {
+        width: 100%;
+    }
+    .btn-red {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        min-height: 150px;
+        border: none;
+        color: #9ab3c5;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        background-color: #eef5fb;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        resize: none;
+        outline: none;
+    }
+    .agree {
+        margin: 14px 0 0 0;
+        line-height: 1.25;
+    }
+}
+
+.rewiews-items-container .rewiews-item {
+    width: 100%;
+    min-height: 248px;
+    padding: 38px 38px 29px 36px;
+    margin: 0 0 0 0;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(138, 184, 233, 0.24);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.rewiews-rating {
+    display: flex;
+    justify-content: flex-start;
+    img {
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+    }
+    img:last-child {
+        margin-right: 0;
+    }
+}
+
+.rewiews-item--top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rewiews-name {
+    color: #5a9ad8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rewiews-item-text {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.rewiews-items-container {
+    max-height: 525px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.rewiews-next {
+    position: absolute;
+    top: -47px;
+    left: 50%;
+    display: block;
+    width: 36px;
+    height: 25px;
+    transform: translateX(-50%) rotate(90deg);
+    -webkit-transform: translateX(-50%) rotate(90deg);
+    -moz-transform: translateX(-50%) rotate(90deg);
+    -ms-transform: translateX(-50%) rotate(90deg);
+    -o-transform: translateX(-50%) rotate(90deg);
+    cursor: pointer;
+    background: url(../img/svg/arr-slider.svg) no-repeat center;
+    background-size: contain;
+}
+
+.rewiews-prev {
+    position: absolute;
+    bottom: -47px;
+    left: 50%;
+    display: block;
+    width: 36px;
+    height: 25px;
+    transform: translateX(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) rotate(-90deg);
+    -moz-transform: translateX(-50%) rotate(-90deg);
+    -ms-transform: translateX(-50%) rotate(-90deg);
+    -o-transform: translateX(-50%) rotate(-90deg);
+    cursor: pointer;
+    background: url(../img/svg/arr-slider.svg) no-repeat center;
+    background-size: contain;
+}
+
+.swiper-pagination-rewiews {
+    position: absolute;
+    height: 100%;
+    left: -24px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .swiper-pagination-bullet {
+        display: block;
+        margin: 8.5px 0;
+        width: 13px;
+        height: 13px;
+        background-color: #cbd9e5;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        cursor: pointer;
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -ms-transition: all .2s linear;
+        -o-transition: all .2s linear;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #ec4e4f;
+    }
+}
