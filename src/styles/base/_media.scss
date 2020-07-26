@@ -353,6 +353,9 @@
 }
 
 @media screen and (max-width: 991px) {
+    .header-bottom-line .container {
+        width: 100%;
+    }
     .header-top-line .address,
     .header-top-line .phone {
         display: none;
@@ -553,11 +556,64 @@
     .footer span {
         text-align: center;
     }
+    .address {
+        margin: 0 0 15px 0;
+    }
+    .address::before {
+        background: url(../img/svg/gps-black.svg) no-repeat center;
+        background-size: cover;
+    }
+    .phone::before {
+        background: url(../img/svg/tel-black.svg) no-repeat center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .popup__title {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .form-popup__item {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .form-popup span {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-popup .btn-red {
+        max-width: 100%;
+    }
+    .form-popup .agree {
+        width: 100%;
+        line-height: 1.25;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+    .popup__content {
+        margin: 0 5px;
+        padding: 45px 10px 30px 10px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .container {
         width: 320px;
+    }
+    .address {
+        padding: 45px 0 0 0;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .address::before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
     }
     .top-wrap .title {
         font-size: 32px;

@@ -197,8 +197,8 @@
 }
 
 .datepicker--cell.-current- {
-    color: #fff;
-    background-color: #8ab8e9;
+    color: #000;
+    background-color: transparent;
 }
 
 .datepicker--cell.-selected- {
@@ -231,11 +231,38 @@
 
 .datepicker--nav-action {
     position: absolute;
+    height: 25px;
+    width: 18px;
+    svg {
+        display: none;
+    }
+}
+
+.datepicker--nav-action[data-action="next"] {
+    right: 75px;
+    background: url(../img/svg/arr-slider.svg) no-repeat center;
+    background-size: contain;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+
+.datepicker--nav-action[data-action="prev"] {
+    right: 35px;
+    background: url(../img/svg/arr-slider.svg) no-repeat center;
+    background-size: contain;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 
 .datepicker--content {
     box-sizing: border-box;
-    padding: 0 0 0 0;
+    padding: 0 30px 0 30px;
 }
 
 .datepicker--cell:hover {

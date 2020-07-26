@@ -6,6 +6,7 @@ import "../../node_modules/bootstrap/js/dist/modal";
 import "./import/jquery.mask";
 import "./import/jquery.nice-select.min";
 import "./import/datepicker.min";
+import "./import/jquery.fancybox.min";
 
 
 
@@ -118,6 +119,16 @@ $(function() {
                 }
             });
         }
+
+        if (width < '992') {
+            $('.top-menu a').click(function() {
+                $('#hamburger-icon').removeClass('active');
+                $('.header-bottom-line').removeClass('active');
+                $('html').removeClass('ov-hidden');
+            });
+        }
+
+
     });
 
 });
